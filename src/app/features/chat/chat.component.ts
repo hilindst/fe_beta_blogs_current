@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../message.service';
-import { NgModel } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.scss'
 })
