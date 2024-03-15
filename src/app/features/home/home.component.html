@@ -1,1 +1,4 @@
-<app-blog-list [blogs] = "homeBlogs"/>
+<div class="container">
+  <app-blog-list [blogs]="homeBlogs" (onChangeBlogs)="homeBlogs = $event" />
+<app-chat/>
+</div>
